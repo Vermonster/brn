@@ -1,4 +1,4 @@
-Simple Regimen Notation
+Brief Regimen Notation
 =======================
 
 Use a structured, short notation as a cononical DSL to describe a regimen.  The notation should be fully useful on it's face, and instantanly recognizable.
