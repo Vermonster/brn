@@ -85,4 +85,8 @@ Regimen Object
       }
 
 
+License
+-------
 
+Copyright (C) 2012 Vermonster LLC
+http://www.opensource.org/licenses/MIT
