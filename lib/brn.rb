@@ -29,7 +29,13 @@ module Brn
       ).map{|unit_name| str(unit_name) }.reduce(:|)
     }
 
-    rule(:drug_sig) { word.as(:drug_name) >> space >> number.as(:base_dose) >> space >> drug_unit.as(:base_dose_unit) }
+    rule(:drug_sig) { 
+      word.as(:drug_name) >> 
+      space >> 
+      number.as(:base_dose) >> 
+      space >> 
+      drug_unit.as(:base_dose_unit) 
+    }
 
   end
 end
