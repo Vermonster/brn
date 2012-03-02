@@ -29,6 +29,32 @@ module Brn
       ).map{|unit_name| str(unit_name) }.reduce(:|)
     }
 
+    rule(:frequency) {
+      %w(
+        q12h
+        q3h
+        q6h
+        q4h
+        tid
+        q2h
+        qhs
+        bid
+        qid
+        prn
+        qd
+        po
+        pc
+        qh
+        ac
+        x4
+        x3
+        x2
+        x1
+      ).map{|frequency_name| str(frequency_name)}.reduce(:|)
+    }
+
+    # Procarbazine 100.0 mg/m^2 po qd d1-7
+    
     rule(:drug_sig) { 
       word.as(:drug_name) >> 
       space >> 
@@ -106,6 +132,18 @@ describe Brn::Parser do
 
     it "numbers, letters, and dashes" do
       @brn_parser.word.parse("5-Flo").wont_be_nil
+    end
+  end
+
+  describe "frequency" do
+    it "x2" do
+      @brn_parser.frequency.parse("x2").wont_be_nil
+    end
+    it "q12h" do
+      @brn_parser.frequency.parse("q12h").wont_be_nil
+    end
+    it "q13h (bad)" do
+      ->{@brn_parser.frequency.parse("")}.must_raise Parslet::ParseFailed
     end
   end
 
