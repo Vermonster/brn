@@ -15,7 +15,7 @@ In general:
 
 For a full description of each section, see below.
 
-Here is an example.  From http://chemoregimen.com/Lymphoma-c-44-55.html, BEACOPP might be expressed as:
+Here is an example.  From https://hemonc.org/wiki/Hodgkin_lymphoma#BEACOPP, BEACOPP might be expressed as:
 
     Name: BEACOPP
     NCI-Code: C11638
@@ -104,5 +104,5 @@ Regimen Object
 License
 -------
 
-Copyright (C) 2012 Vermonster LLC
+Copyright (C) 2012-2018 Vermonster LLC
 http://www.opensource.org/licenses/MIT
