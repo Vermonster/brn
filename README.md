@@ -2,6 +2,7 @@ Brief Regimen Notation
 =======================
 
 [![GitHub license](https://img.shields.io/github/license/Vermonster/brn.svg)](https://github.com/Vermonster/brn)
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/Vermonster/brn.svg)](https://beta.gemnasium.com/projects/github.com/Vermonster/brn)
 
 Use a structured, short notation as a canonical DSL to describe a regimen.  The notation should be fully useful on it's face, and instantly recognizable.
 
