@@ -1,10 +1,10 @@
 Brief Regimen Notation
 =======================
 
-[![GitHub license](https://img.shields.io/github/license/Vermonster/brn.svg)](https://github.com/Vermonster/brn)
 [![Dependency Status](https://beta.gemnasium.com/badges/github.com/Vermonster/brn.svg)](https://beta.gemnasium.com/projects/github.com/Vermonster/brn)
+[![GitHub license](https://img.shields.io/github/license/Vermonster/brn.svg)](https://github.com/Vermonster/brn)
 
-Use a structured, short notation as a canonical DSL to describe a regimen.  The notation should be fully useful on it's face, and instantly recognizable.
+Use a structured, short notation as a canonical DSL to describe a regimen. The notation should be fully useful on its face and instantly recognizable.
 
 In general:
 
@@ -16,7 +16,7 @@ In general:
 
 For a full description of each section, see below.
 
-Here is an example.  From https://hemonc.org/wiki/Hodgkin_lymphoma#BEACOPP, BEACOPP might be expressed as:
+Here is an example. From https://hemonc.org/wiki/Hodgkin_lymphoma#BEACOPP, BEACOPP might be expressed as:
 
     Name: BEACOPP
     NCI-Code: C11638
@@ -39,11 +39,11 @@ Here is an example.  From https://hemonc.org/wiki/Hodgkin_lymphoma#BEACOPP, BEAC
 Sections
 --------
 
-Meta data occurs once per regimen specification. A regimen can have one or more course.  The courses many have one or more drug and one cycle length.
+Metadata occurs once per regimen specification. A regimen can have one or more course.  The courses many have one or more drug and one cycle length.
 
-### Meta Data
+### Metadata
 
-The first section is the meta-data for the regimen.  It's optional, but useful.  The items should be in a key-value list.  This is where the name, NCI code and other information could be placed.
+The first section is the metadata for the regimen. It's optional, but useful.  The items should be in a key-value list. This is where the name, NCI code, and other information could be placed.
 
 ### Course
 
