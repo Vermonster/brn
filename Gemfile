@@ -1,3 +1,5 @@
 source :rubygems
 
-gem 'parslet', '~> 1.2.3'
+ruby '2.5.1'
+
+gem 'parslet', '~> 1.8'

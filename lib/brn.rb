@@ -99,7 +99,7 @@ describe Brn::Parser do
     end
 
     it "no-trailing" do
-      lambda{ @brn_parser.integer.parse("10.") }.must_raise(Parslet::UnconsumedInput)
+      lambda{ @brn_parser.integer.parse("10.") }.must_raise(Parslet::ParseFailed)
     end
   end
 

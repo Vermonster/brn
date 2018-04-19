@@ -1,1 +1,1 @@
-rvm 1.9.2@brn --verbose --create
+rvm 2.5.1@brn --verbose --create
