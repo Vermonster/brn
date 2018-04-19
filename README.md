@@ -1,6 +1,8 @@
 Brief Regimen Notation
 =======================
 
+[![GitHub license](https://img.shields.io/github/license/Vermonster/brn.svg)](https://github.com/Vermonster/brn)
+
 Use a structured, short notation as a canonical DSL to describe a regimen.  The notation should be fully useful on it's face, and instantly recognizable.
 
 In general:
@@ -47,14 +49,14 @@ The first section is the meta-data for the regimen.  It's optional, but useful. 
     Course: [string or number identifying course]
 
 ### Drugs
-    
+
     [ drug name ] [base dose] [base dose unit] [route] [route info]? [time info]? [days] [in cycles]?
 
     Bleomycin 10.0 IU/m^2 iv d8-10
     Bleomycin 10.0 IU/m^2 iv push 30-60 mins d8-10 in cycles 2-4
 
 ### Cycle Length
-    
+
     Q[length] [num-cycles] cycles?
 
 Length can be [0-9]*d or [0-9]*w.  Number of cycles is optional.
